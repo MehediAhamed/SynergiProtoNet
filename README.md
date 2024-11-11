@@ -11,10 +11,10 @@ Before you run this notebook, ensure that you have the following:
 - Access to a GPU (recommended for faster computation)
 
 # Download Datasets 
-  CMATERdb- https://www.kaggle.com/datasets/mostafiz53/basicfinal
-  NumtaDB- https://www.kaggle.com/datasets/BengaliAI/numta
-  BanglaLekha-Isolated- https://www.sciencedirect.com/science/article/pii/S2352340917301117
-  Devanagari- https://www.kaggle.com/datasets/suvooo/hindi-character-recognition
+- CMATERdb- https://www.kaggle.com/datasets/mostafiz53/basicfinal
+- NumtaDB- https://www.kaggle.com/datasets/BengaliAI/numta
+- BanglaLekha-Isolated- https://www.sciencedirect.com/science/article/pii/S2352340917301117
+- Devanagari- https://www.kaggle.com/datasets/suvooo/hindi-character-recognition
 
 # Performance Analysis
 ## Monolingual Intra-Dataset Evaluation
