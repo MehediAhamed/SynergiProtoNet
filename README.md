@@ -1,7 +1,7 @@
 # SynergiProtoNet_Bangla_OCR_Few_Shot_Learning
 This project implements the SynergiProtoNet, a few-shot learning model for recognizing handwritten characters and digits in Bangla script. Based on the methodologies described in our paper, this model demonstrates the ability to perform high-accuracy recognition with limited labeled data, addressing challenges inherent to low-resource languages. It also demonstrates comparative analysis among different classical few shot learning approaches.
 
-## Prerequisites
+# Prerequisites
 
 Before you run this notebook, ensure that you have the following:
 
@@ -9,6 +9,12 @@ Before you run this notebook, ensure that you have the following:
 - Pip package manager
 - Git CLI 
 - Access to a GPU (recommended for faster computation)
+
+# Download Datasets 
+  CMATERdb- https://www.kaggle.com/datasets/mostafiz53/basicfinal
+  NumtaDB- https://www.kaggle.com/datasets/BengaliAI/numta
+  BanglaLekha-Isolated- https://www.sciencedirect.com/science/article/pii/S2352340917301117
+  Devanagari- https://www.kaggle.com/datasets/suvooo/hindi-character-recognition
 
 # Performance Analysis
 ## Monolingual Intra-Dataset Evaluation
