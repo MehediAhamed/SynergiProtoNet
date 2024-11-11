@@ -13,15 +13,15 @@ Before you run this notebook, ensure that you have the following:
 # Performance Analysis
 ## Monolingual Intra-Dataset Evaluation
 
+
 | Network          | 1-shot Acc(%) | 1-shot F1 | 1-shot Recall | 1-shot Precision | 5-shot Acc(%) | 5-shot F1 | 5-shot Recall | 5-shot Precision | 10-shot Acc(%) | 10-shot F1 | 10-shot Recall | 10-shot Precision |
 |------------------|---------------|-----------|---------------|------------------|---------------|-----------|---------------|------------------|----------------|------------|----------------|-------------------|
-| Matching   | 69.64         | 0.69      |  0.69     |  0.69        | 38.66         | 0.39      | 0.39       |  0.39       | 36.36          | 0.36       | 0.36      | 0.36      |
-| Simpleshot   | 69.42         | 0.70      | 0.71       | 0.70       | 75.68         | 0.78      | 0.78       | 0.78       | 82.9           | 0.82       | Recall10       | Precision10       |
-| Relation [20]    | 77.10         | 0.76      | Recall1       | Precision1       | 85.58         | 0.87      | Recall5       | Precision5       | 83.2           | 0.83       | Recall10       | Precision10       |
-| BD-CSPN [21]     | 69.68         | 0.71      | Recall1       | Precision1       | 76.58         | 0.76      | Recall5       | Precision5       | 83.48          | 0.82       | Recall10       | Precision10       |
-| Prototypical [23]| 74.48         | 0.74      | Recall1       | Precision1       | 87.88         | 0.87      | Recall5       | Precision5       | 87.56          | 0.87       | Recall10       | Precision10       |
-| SynergiProtoNet  | **79.1**      | **0.79**  | Recall1       | Precision1       | **88.95**     | **0.88**  | Recall5       | Precision5       | **90.04**      | **0.90**   | Recall10       | Precision10       |
-
+| Matching     | 69.64         | 0.69      | 0.69          | 0.69             | 38.66         | 0.39      | 0.39          | 0.39             | 36.36          | 0.36       | 0.36           | 0.36              |
+| Simpleshot   | 69.42         | 0.70      | 0.71          | 0.70             | 75.68         | 0.78      | 0.78          | 0.77             | 82.9           | 0.82       | 0.82           | 0.82              |
+| Relation     | 77.10         | 0.76      | 0.76          | 0.76             | 85.58         | 0.87      | 0.87          | 0.87             | 83.2           | 0.83       | 0.83           | 0.83              |
+| BD-CSPN      | 69.68         | 0.71      | 0.71          | 0.71             | 76.58         | 0.76      | 0.76          | 0.76             | 83.48          | 0.82       | 0.82           | 0.82              |
+| Prototypical | 74.48         | 0.74      | 0.75          | 0.74             | 87.88         | 0.87      | 0.87          | 0.87             | 87.56          | 0.87       | 0.87           | 0.87              |
+| SynergiProtoNet  | 79.1          | 0.79      | 0.79          | 0.79             | 88.95         | 0.88      | 0.88          | 0.88             | 90.04          | 0.90       | 0.90           | 0.90              |
 
 
 
@@ -31,41 +31,43 @@ Before you run this notebook, ensure that you have the following:
 
 ## Monolingual Inter-Dataset Evaluation
 
-| Network          | 1-shot Acc(%) | 1-shot F1 | 1-shot Recall | 1-shot Precision | 5-shot Acc(%) | 5-shot F1 | 5-shot Recall | 5-shot Precision | 10-shot Acc(%) | 10-shot F1 | 10-shot Recall | 10-shot Precision |
-|------------------|---------------|-----------|---------------|------------------|---------------|-----------|---------------|------------------|----------------|------------|----------------|-------------------|
-| Matching [19]    | 48.6          | 0.52      | Recall1       | Precision1       | 41.8          | 0.39      | Recall5       | Precision5       | 26.9           | 0.26       | Recall10       | Precision10       |
-| Simpleshot [22]  | 51.34         | 0.55      | Recall1       | Precision1       | 63.54         | 0.63      | Recall5       | Precision5       | 64.94          | 0.66       | Recall10       | Precision10       |
-| Relation [20]    | 56.46         | 0.58      | Recall1       | Precision1       | 74.02         | 0.72      | Recall5       | Precision5       | 65.04          | 0.67       | Recall10       | Precision10       |
-| BD-CSPN [21]     | 50.84         | 0.5       | Recall1       | Precision1       | 60.3          | 0.6       | Recall5       | Precision5       | 69.2           | 0.7        | Recall10       | Precision10       |
-| Prototypical [23]| 54.28         | 0.55      | Recall1       | Precision1       | 76.18         | 0.75      | Recall5       | Precision5       | 76.24          | 0.75       | Recall10       | Precision10       |
-| SynergiProtoNet  | **59.02**     | **0.59**  | Recall1       | Precision1       | **77.68**     | **0.78**  | Recall5       | Precision5       | **81.36**      | **0.83**   | Recall10       | Precision10       |
-
-
+| Network            | 1-shot Acc(%) | 1-shot F1 | 1-shot Recall | 1-shot Precision | 5-shot Acc(%) | 5-shot F1 | 5-shot Recall | 5-shot Precision | 10-shot Acc(%) | 10-shot F1 | 10-shot Recall | 10-shot Precision |
+|--------------------|---------------|-----------|---------------|------------------|---------------|-----------|---------------|------------------|----------------|------------|----------------|-------------------|
+| Matching       | 48.6          | 0.52      | 0.51          | 0.52             | 41.8          | 0.39      | 0.4           | 0.39             | 26.9           | 0.26       | 0.26           | 0.26              |
+| Simpleshot     | 51.34         | 0.55      | 0.54          | 0.54             | 63.54         | 0.63      | 0.63          | 0.63             | 64.94          | 0.66       | 0.66           | 0.66              |
+| BD-CSPN        | 50.84         | 0.5       | 0.5           | 0.51             | 60.3          | 0.6       | 0.6           | 0.6              | 69.2           | 0.7        | 0.7            | 0.7               |
+| Prototypical   | 54.28         | 0.55      | 0.56          | 0.55             | 76.18         | 0.75      | 0.75          | 0.75             | 76.24          | 0.75       | 0.75           | 0.75              |
+| Synergi w/o pretrain| 44.5         | 0.45      | 0.44          | 0.44             | 65.16         | 0.66      | 0.66          | 0.66             | 68.76          | 0.68       | 0.68           | 0.68              |
+| SynergiProtoNet    | 59.02         | 0.59      | 0.59          | 0.59             | 77.68         | 0.78      | 0.78          | 0.78             | 81.36          | 0.83       | 0.83           | 0.83              |
+| Relation      | 56.46         | 0.58      | 0.58          | 0.58             | 74.02         | 0.72      | 0.72          | 0.72             | 65.04          | 0.67       | 0.65           | 0.65              |
 
 
 ## Cross-Lingual Performance Analysis
 
-| Network          | 1-shot Acc(%) | 1-shot F1 | 1-shot Recall | 1-shot Precision | 5-shot Acc(%) | 5-shot F1 | 5-shot Recall | 5-shot Precision | 10-shot Acc(%) | 10-shot F1 | 10-shot Recall | 10-shot Precision |
-|------------------|---------------|-----------|---------------|------------------|---------------|-----------|---------------|------------------|----------------|------------|----------------|-------------------|
-| Matching [19]    | 52.84         | 0.52      | Recall1       | Precision1       | 26.68         | 0.27      | Recall5       | Precision5       | 37.58          | 0.38       | Recall10       | Precision10       |
-| Simpleshot [22]  | 42.92         | 0.46      | Recall1       | Precision1       | 56.14         | 0.53      | Recall5       | Precision5       | 55.10          | 0.54       | Recall10       | Precision10       |
-| BD-CSPN [21]     | 44.58         | 0.45      | Recall1       | Precision1       | 54.72         | 0.52      | Recall5       | Precision5       | 57.72          | 0.57       | Recall10       | Precision10       |
-| Prototypical [23]| 53.64         | 0.55      | Recall1       | Precision1       | 76.74         | 0.77      | Recall5       | Precision5       | 79.48          | 0.79       | Recall10       | Precision10       |
-| Relation [20]    | 61.12         | 0.61      | Recall1       | Precision1       | 74.02         | 0.72      | Recall5       | Precision5       | 81.93          | 0.82       | Recall10       | Precision10       |
-| SynergiProtoNet  | 58.59         | 0.55      | Recall1       | Precision1       | 76.84         | 0.77      | Recall5       | Precision5       | 82.12          | 0.82       | Recall10       | Precision10       |
+
+| Network            | 1-shot Acc(%) | 1-shot F1 | 1-shot Recall | 1-shot Precision | 5-shot Acc(%) | 5-shot F1 | 5-shot Recall | 5-shot Precision | 10-shot Acc(%) | 10-shot F1 | 10-shot Recall | 10-shot Precision |
+|--------------------|---------------|-----------|---------------|------------------|---------------|-----------|---------------|------------------|----------------|------------|----------------|-------------------|
+| Matching      | 52.84         | 0.52      | 0.52          | 0.52             | 26.68         | 0.27      | 0.27          | 0.27             | 37.58          | 0.38       | 0.38           | 0.38              |
+| Simpleshot     | 42.92         | 0.46      | 0.46          | 0.46             | 56.14         | 0.53      | 0.53          | 0.53             | 55.10          | 0.54       | 0.54           | 0.54              |
+| BD-CSPN       | 44.58         | 0.45      | 0.45          | 0.45             | 54.72         | 0.52      | 0.52          | 0.53             | 57.72          | 0.57       | 0.57           | 0.57              |
+| Prototypical  | 53.64         | 0.55      | 0.56          | 0.55             | 76.74         | 0.77      | 0.77          | 0.77             | 79.48          | 0.79       | 0.79           | 0.79              |
+| Synergi w/o pretrain | 50.46       | 0.51      | 0.51          | 0.51             | 71.14         | 0.70      | 0.70          | 0.70             | 76.98          | 0.76       | 0.76           | 0.76              |
+| SynergiProtoNet    | 58.59         | 0.55      | 0.55          | 0.55             | 76.84         | 0.77      | 0.77          | 0.77             | 82.12          | 0.82       | 0.82           | 0.82              |
+| Relation      | 61.12         | 0.61      | 0.61          | 0.61             | 74.02         | 0.72      | 0.72          | 0.72             | 81.93          | 0.82       | 0.82           | 0.82              |
+
 
 
 
 
 ## Split Digit Testing
 
-| Network          | 1-shot Acc(%) | 1-shot F1 | 1-shot Recall | 1-shot Precision | 5-shot Acc(%) | 5-shot F1 | 5-shot Recall | 5-shot Precision | 10-shot Acc(%) | 10-shot F1 | 10-shot Recall | 10-shot Precision |
-|------------------|---------------|-----------|---------------|------------------|---------------|-----------|---------------|------------------|----------------|------------|----------------|-------------------|
-| Matching [19]    | 73.67         | 0.74      | Recall1       | Precision1       | 33.1          | 0.29      | Recall5       | Precision5       | 32.17          | 0.33       | Recall10       | Precision10       |
-| BD-CSPN [21]     | 55.43         | 0.59      | Recall1       | Precision1       | 64.43         | 0.64      | Recall5       | Precision5       | 69.17          | 0.68       | Recall10       | Precision10       |
-| Simpleshot [22]  | 65.6          | 0.61      | Recall1       | Precision1       | 72.9          | 0.7       | Recall5       | Precision5       | 76.97          | 0.76       | Recall10       | Precision10       |
-| Relation [20]    | 64.97         | 0.63      | Recall1       | Precision1       | 79.83         | 0.8       | Recall5       | Precision5       | 81.37          | 0.83       | Recall10       | Precision10       |
-| Prototypical [23]| 66.57         | 0.65      | Recall1       | Precision1       | 76.33         | 0.75      | Recall5       | Precision5       | 87.1           | 0.86       | Recall10       | Precision10       |
-| SynergiProtoNet  | 37.4          | 0.37      | Recall1       | Precision1       | 83.73         | 0.83      | Recall5       | Precision5       | 88.3           | 0.87       | Recall10       | Precision10       |
-
+| Network              | 1-shot Acc(%) | 1-shot F1 | 1-shot Recall | 1-shot Precision | 5-shot Acc(%) | 5-shot F1 | 5-shot Recall | 5-shot Precision | 10-shot Acc(%) | 10-shot F1 | 10-shot Recall | 10-shot Precision |
+|----------------------|---------------|-----------|---------------|------------------|---------------|-----------|---------------|------------------|----------------|------------|----------------|-------------------|
+| Matching       | 73.67         | 0.74      | 0.75          | 0.75             | 33.1          | 0.29      | 0.34          | 0.34             | 32.17          | 0.33       | 0.34           | 0.34              |
+| BD-CSPN         | 55.43         | 0.59      | 0.59          | 0.59             | 64.43         | 0.64      | 0.64          | 0.64             | 69.17          | 0.68       | 0.68           | 0.68              |
+| Simpleshot      | 65.6          | 0.61      | 0.62          | 0.61             | 72.9          | 0.7       | 0.71          | 0.73             | 76.97          | 0.76       | 0.76           | 0.76              |
+| Relation        | 64.97         | 0.63      | 0.64          | 0.64             | 79.83         | 0.8       | 0.79          | 0.8              | 81.37          | 0.83       | 0.83           | 0.83              |
+| Prototypical     | 66.57         | 0.65      | 0.65          | 0.65             | 76.33         | 0.75      | 0.74          | 0.74             | 87.1           | 0.86       | 0.86           | 0.86              |
+| Synergi w/o pretrain | 46.47         | 0.48      | 0.47          | 0.47             | 52.6          | 0.53      | 0.53          | 0.53             | 57.6           | 0.57       | 0.57           | 0.57              |
+| SynergiProtoNet      | 37.4          | 0.37      | 0.37          | 0.37             | 83.73         | 0.83      | 0.83          | 0.83             | 88.3           | 0.87       | 0.87           | 0.87              |
 
