@@ -77,3 +77,15 @@ Before you run this notebook, ensure that you have the following:
 | Synergi w/o pretrain | 46.47         | 0.48      | 0.47          | 0.47             | 52.6          | 0.53      | 0.53          | 0.53             | 57.6           | 0.57       | 0.57           | 0.57              |
 | SynergiProtoNet      | 37.4          | 0.37      | 0.37          | 0.37             | 83.73         | 0.83      | 0.83          | 0.83             | 88.3           | 0.87       | 0.87           | 0.87              |
 
+
+
+
+
+
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+## Acknowledgements
+Thanks to all contributors and researchers who made this project possible. Special thanks to the Islamic University of Technology for funding the project.
