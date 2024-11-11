@@ -86,6 +86,3 @@ Before you run this notebook, ensure that you have the following:
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-
-# Acknowledgements
-Thanks to all contributors and researchers who made this project possible. Special thanks to the Islamic University of Technology for funding the project.
