@@ -87,16 +87,13 @@ Before you run this notebook, ensure that you have the following:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 # Cite
-@INPROCEEDINGS{10951048,
-  author={Ahamed, Mehedi and Kabir, Radib Bin and Dipto, Tawsif Tashwar and Al Mushabbir, Mueeze and Ahmed, Sabbir and Kabir, Md. Hasanul},
-  booktitle={2024 6th International Conference on Sustainable Technologies for Industry 5.0 (STI)}, 
-  title={Performance Analysis of Few-Shot Learning Approaches for Bangla Handwritten Character and Digit Recognition}, 
-  year={2024},
-  volume={},
-  number={},
-  pages={1-6},
-  doi={10.1109/STI64222.2024.10951048},
-  ISSN={2996-170X},
-  month={Dec},}
+@inproceedings{MehediAhamed,
+author = {Ahamed, Mehedi and Kabir, Radib and Dipto, Tawsif and Mushabbir, Mueeze and Ahmed, Sabbir and Kabir, Md},
+year = {2024},
+month = {12},
+pages = {1-6},
+title = {Performance Analysis of Few-Shot Learning Approaches for Bangla Handwritten Character and Digit Recognition},
+doi = {10.1109/STI64222.2024.10951048}
+}
 
 
